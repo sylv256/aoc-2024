@@ -11,6 +11,10 @@ path = "src/day_1_part_1/main.rs"
 name = "day_1_part_2"
 path = "src/day_1_part_2/main.rs"
 
+[[bin]]
+name = "day_2_part_1"
+path = "src/day_2_part_1/main.rs"
+
 [dependencies]
 thiserror = "2"
 anyhow = "1"

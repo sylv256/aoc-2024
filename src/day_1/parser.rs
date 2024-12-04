@@ -1,16 +1,4 @@
-use std::num::ParseIntError;
-
-use thiserror::Error;
-
-#[derive(Error, Debug)]
-pub enum ParseError {
-	#[error("error parsing int: {0}")]
-	ParseIntError(#[from] ParseIntError),
-	#[error("odd number of arguments in key-value pair list: {0}")]
-	OddArguments(usize),
-}
-
-pub type ParseResult<T> = Result<T, ParseError>;
+use crate::{ParseError, ParseResult};
 
 /// Parse contents and pair them up
 pub fn parse_pairs_tuple(text: &str) -> ParseResult<Vec<(i32, i32)>> {
