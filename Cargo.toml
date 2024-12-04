@@ -3,4 +3,14 @@ name = "aoc-2024"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "day_1_part_1"
+path = "src/day_1_part_1/main.rs"
+
+[[bin]]
+name = "day_1_part_2"
+path = "src/day_1_part_2/main.rs"
+
 [dependencies]
+thiserror = "2"
+anyhow = "1"
